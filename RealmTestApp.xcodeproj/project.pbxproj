@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		9DB5626E2BA5BCDF00AEF3B0 /* RealmTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB5626D2BA5BCDF00AEF3B0 /* RealmTestAppApp.swift */; };
-		9DB562702BA5BCDF00AEF3B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB5626F2BA5BCDF00AEF3B0 /* ContentView.swift */; };
+		9DB562702BA5BCDF00AEF3B0 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB5626F2BA5BCDF00AEF3B0 /* ToDoListView.swift */; };
 		9DB562722BA5BCE000AEF3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562712BA5BCE000AEF3B0 /* Assets.xcassets */; };
 		9DB562752BA5BCE000AEF3B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB562742BA5BCE000AEF3B0 /* Preview Assets.xcassets */; };
 		9DB5627C2BA5BE2D00AEF3B0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB5627B2BA5BE2D00AEF3B0 /* Launch Screen.storyboard */; };
 		9DB5627F2BA5C0AA00AEF3B0 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9DB5627E2BA5C0AA00AEF3B0 /* Realm */; };
 		9DB562812BA5C0AA00AEF3B0 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9DB562802BA5C0AA00AEF3B0 /* RealmSwift */; };
+		9DB562842BA5C27200AEF3B0 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB562832BA5C27200AEF3B0 /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9DB5626A2BA5BCDF00AEF3B0 /* RealmTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB5626D2BA5BCDF00AEF3B0 /* RealmTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTestAppApp.swift; sourceTree = "<group>"; };
-		9DB5626F2BA5BCDF00AEF3B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9DB5626F2BA5BCDF00AEF3B0 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		9DB562712BA5BCE000AEF3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB562742BA5BCE000AEF3B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DB5627B2BA5BE2D00AEF3B0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9DB562832BA5C27200AEF3B0 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 		9DB5626C2BA5BCDF00AEF3B0 /* RealmTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				9DB562822BA5C25700AEF3B0 /* Models */,
 				9DB5626D2BA5BCDF00AEF3B0 /* RealmTestAppApp.swift */,
-				9DB5626F2BA5BCDF00AEF3B0 /* ContentView.swift */,
+				9DB5626F2BA5BCDF00AEF3B0 /* ToDoListView.swift */,
 				9DB562712BA5BCE000AEF3B0 /* Assets.xcassets */,
 				9DB562732BA5BCE000AEF3B0 /* Preview Content */,
 				9DB5627B2BA5BE2D00AEF3B0 /* Launch Screen.storyboard */,
@@ -72,6 +75,14 @@
 				9DB562742BA5BCE000AEF3B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DB562822BA5C25700AEF3B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DB562832BA5C27200AEF3B0 /* ToDo.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB562702BA5BCDF00AEF3B0 /* ContentView.swift in Sources */,
+				9DB562702BA5BCDF00AEF3B0 /* ToDoListView.swift in Sources */,
+				9DB562842BA5C27200AEF3B0 /* ToDo.swift in Sources */,
 				9DB5626E2BA5BCDF00AEF3B0 /* RealmTestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
